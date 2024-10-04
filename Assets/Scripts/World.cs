@@ -23,7 +23,7 @@ public class World : MonoBehaviour
     public static Vector3 GetMovement(float fallingDrag, float windMultiplier)
     {
         Vector2 wind = Wind.CurrentWind * windMultiplier;
-        Vector2 fall = Vector2.up * GetFallSpeed(fallingDrag) * PillowStack.SpeedMultiplier;
+        Vector2 fall = Vector2.up * (GetFallSpeed(fallingDrag) - PlayerMovement.VerticalWorldVelocity) * PillowStack.SpeedMultiplier;
         return wind + fall;
     }
 

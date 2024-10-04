@@ -9,7 +9,7 @@ public class CloudLayer : MonoBehaviour
 
     void Update()
     {
-        transform.position += World.GetMovement(drag, windMult);
+        transform.position += World.GetMovement(drag, windMult) * Time.deltaTime;
         if (transform.position.y > 10f)
             transform.PositionMut().y -= 20f;
     }
