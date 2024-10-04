@@ -9,4 +9,6 @@ public class PillowStack : MonoBehaviour
     {
         instance = this;
     }
+
+    public static float SpeedMultiplier => 1f;
 }

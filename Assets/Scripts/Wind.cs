@@ -10,5 +10,5 @@ public class Wind : MonoBehaviour
         instance = this;
     }
 
-    //public float 
+    public static Vector2 CurrentWind => Vector2.zero;
 }
