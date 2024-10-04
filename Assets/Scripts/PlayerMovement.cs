@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     [Space]
     public float verticalCorrectionStiffness = 1f;
     public float verticalCorrectionDamping = 0.1f;
+    public float baselineY = 3f;
 
     Rigidbody2D rb;
     float verticalWorldVelocity;
@@ -65,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         float currentVelocity = rb.velocity.y;
 
         float dampingFactor = Mathf.Max(0f, 1f - verticalCorrectionDamping * Time.deltaTime);
-        float acceleration = -currentVelocity * verticalCorrectionStiffness * Time.deltaTime;
+        float acceleration = (baselineY - rb.position.y) * verticalCorrectionStiffness * Time.deltaTime;
         currentVelocity = currentVelocity * dampingFactor + acceleration;
         rb.velocity = rb.velocity.WithY(currentVelocity);
     }

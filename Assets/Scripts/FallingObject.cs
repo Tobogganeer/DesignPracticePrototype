@@ -15,7 +15,15 @@ public class FallingObject : MonoBehaviour
 
     private void Update()
     {
-        Vector3 end = transform.position + World.GetObjectMovement(this) * movementGizmoMultiplier;
+        Vector3 movement = World.GetObjectMovement(this);
+        transform.position += movement * Time.deltaTime; // Move!!!
+
+        DrawGizmos(movement);
+    }
+
+    private void DrawGizmos(Vector3 movement)
+    {
+        Vector3 end = transform.position + movement * movementGizmoMultiplier;
         Gizmos.Line(transform.position, end, Color.yellow);
     }
 }

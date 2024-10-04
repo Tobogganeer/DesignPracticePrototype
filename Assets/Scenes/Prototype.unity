@@ -284,7 +284,6 @@ GameObject:
   - component: {fileID: 1556761584}
   - component: {fileID: 1556761583}
   - component: {fileID: 1556761582}
-  - component: {fileID: 1556761581}
   m_Layer: 0
   m_Name: Pillow
   m_TagString: Untagged
@@ -292,21 +291,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1556761581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556761580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a38a27caa1dccd4e8cee3946b756379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallingDrag: 0.5
-  windMultiplier: 1
-  movementGizmoMultiplier: 1
 --- !u!114 &1556761582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,6 +412,7 @@ MonoBehaviour:
   downwardsAcceleration: 2
   verticalCorrectionStiffness: 1
   verticalCorrectionDamping: 0.1
+  baselineY: 3
 --- !u!50 &1582133674
 Rigidbody2D:
   serializedVersion: 4
