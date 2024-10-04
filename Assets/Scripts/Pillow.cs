@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Pillow : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+            CollectPillow();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void CollectPillow()
     {
-        
+        Destroy(gameObject);
     }
 }

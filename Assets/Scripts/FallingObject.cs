@@ -15,10 +15,20 @@ public class FallingObject : MonoBehaviour
 
     private void Update()
     {
-        Vector3 movement = World.GetObjectMovement(this);
+        Vector3 movement;
+        // Move at constant speed until near screen
+        if (transform.position.y < World.instance.offScreenMoveThreshold)
+            movement = Vector3.up * World.instance.offScreenMoveSpeed;
+        else
+            movement = World.GetObjectMovement(this);
+
         transform.position += movement * Time.deltaTime; // Move!!!
 
         DrawGizmos(movement);
+
+        // Destroy when offscreen
+        if (transform.position.y > 20f)
+            Destroy(gameObject);
     }
 
     private void DrawGizmos(Vector3 movement)

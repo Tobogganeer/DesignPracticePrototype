@@ -14,6 +14,10 @@ public class World : MonoBehaviour
     public float minFallSpeed = 2f;
     public float maxFallSpeed = 6f;
 
+    [Space]
+    public float offScreenMoveThreshold = -10f;
+    public float offScreenMoveSpeed = 1f;
+
     public static Vector3 GetObjectMovement(FallingObject obj) => GetMovement(obj.fallingDrag, obj.windMultiplier);
 
     public static Vector3 GetMovement(float fallingDrag, float windMultiplier)
