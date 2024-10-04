@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PillowStack : MonoBehaviour
+public class World : MonoBehaviour
 {
-    public static PillowStack instance;
+    public static World instance;
     private void Awake()
     {
         instance = this;
