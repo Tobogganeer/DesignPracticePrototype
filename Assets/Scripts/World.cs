@@ -14,9 +14,9 @@ public class World : MonoBehaviour
     public float minFallSpeed = 2f;
     public float maxFallSpeed = 6f;
 
-    public static Vector2 GetObjectMovement(FallingObject obj) => GetMovement(obj.fallingDrag, obj.windMultiplier);
+    public static Vector3 GetObjectMovement(FallingObject obj) => GetMovement(obj.fallingDrag, obj.windMultiplier);
 
-    public static Vector2 GetMovement(float fallingDrag, float windMultiplier)
+    public static Vector3 GetMovement(float fallingDrag, float windMultiplier)
     {
         Vector2 wind = Wind.CurrentWind * windMultiplier;
         Vector2 fall = Vector2.up * GetFallSpeed(fallingDrag) * PillowStack.SpeedMultiplier;
