@@ -29,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     float verticalWorldVelocity;
     Vector2 input;
 
+    float time;
+
     public static float VerticalWorldVelocity => instance.verticalWorldVelocity;
 
     void Start()
@@ -44,6 +46,9 @@ public class PlayerMovement : MonoBehaviour
         float vertAcceleration = input.y > 0f ? upwardsAcceleration : downwardsAcceleration;
         float vertSpeed = input.y > 0f ? upwardsSpeed : downwardsSpeed;
         verticalWorldVelocity = Mathf.Lerp(verticalWorldVelocity, vertSpeed * input.y, Time.deltaTime * vertAcceleration);
+
+        if ((time += Time.deltaTime) > 20f)
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
     private void FixedUpdate()
