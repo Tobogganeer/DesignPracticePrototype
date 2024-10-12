@@ -14,6 +14,10 @@ public class HotDogStand : MonoBehaviour
     private void OnDisable()
     {
         all.Remove(this);
+        if (all.Count == 0)
+        {
+
+        }
     }
 
     public static HotDogStand GetClosest(Vector3 position)
@@ -32,5 +36,11 @@ public class HotDogStand : MonoBehaviour
         }
 
         return closestStand;
+    }
+
+    public void OnCollidedWith()
+    {
+        // Kabloom
+        Destroy(gameObject);
     }
 }
