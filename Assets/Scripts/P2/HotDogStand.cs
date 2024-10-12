@@ -16,7 +16,7 @@ public class HotDogStand : MonoBehaviour
         all.Remove(this);
         if (all.Count == 0)
         {
-
+            // TODO: End game?
         }
     }
 

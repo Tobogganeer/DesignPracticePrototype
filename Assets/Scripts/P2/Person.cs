@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
-public abstract class Person : MonoBehaviour
+public class Person : MonoBehaviour
 {
     public float speed = 3f;
     public int health = 2;
@@ -27,7 +27,10 @@ public abstract class Person : MonoBehaviour
         Move(spawnPoint, target);
     }
 
-    protected abstract void Move(Vector3 spawnPoint, Vector3 to);
+    protected virtual void Move(Vector3 spawnPoint, Vector3 to)
+    {
+        transform.position += transform.position.Dir(to) * speed * Time.deltaTime;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
