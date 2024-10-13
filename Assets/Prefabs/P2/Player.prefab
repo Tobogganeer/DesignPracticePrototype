@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1551454690392375283}
   - component: {fileID: 1900989113965416843}
   - component: {fileID: 5807735245510265192}
+  - component: {fileID: 8434506742844973906}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -100,3 +101,17 @@ MonoBehaviour:
   yellPrefab: {fileID: 2067538681257897083, guid: 9acd49f6a10c3ca40815c25ace4952a5, type: 3}
   fillBar: {fileID: 0}
   cooldown: 1.5
+--- !u!114 &8434506742844973906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3954345444491815603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8408d5c02d3b840b733c5523b010da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  acceleration: 6
