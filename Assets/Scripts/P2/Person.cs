@@ -12,6 +12,10 @@ public class Person : MonoBehaviour
     public float pushBackDistance = 3f;
     public float pushBackTime = 0.5f;
 
+    [Space]
+    public GameObject explosionPrefab;
+    public GameObject scorchMark;
+
     bool beingPushedBack;
     HotDogStand targetStand;
     Vector3 spawnPoint;
@@ -82,7 +86,8 @@ public class Person : MonoBehaviour
 
     public virtual void Kill()
     {
-        // TODO: Explode?
         Destroy(gameObject);
+        Instantiate(scorchMark, transform.position, Quaternion.identity);
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
     }
 }
