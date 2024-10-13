@@ -82,10 +82,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00580dccbe050984daa823e0ed034b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  health: 2
-  pushBackDistance: 3
-  pushBackTime: 0.5
+  speed: 1
+  health: 3
+  pushBackDistance: 1.25
+  pushBackTime: 0.75
 --- !u!50 &-3097241888183092494
 Rigidbody2D:
   serializedVersion: 4

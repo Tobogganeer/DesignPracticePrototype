@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  health: 2
+  health: 1
   pushBackDistance: 3
   pushBackTime: 0.5
   zigzagSpeed: 0.5

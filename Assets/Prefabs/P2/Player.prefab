@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yellPrefab: {fileID: 2067538681257897083, guid: 9acd49f6a10c3ca40815c25ace4952a5, type: 3}
   fillBar: {fileID: 0}
-  cooldown: 1.5
+  cooldown: 1
 --- !u!114 &8434506742844973906
 MonoBehaviour:
   m_ObjectHideFlags: 0

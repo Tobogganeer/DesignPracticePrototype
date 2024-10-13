@@ -23,13 +23,13 @@ public class Yelling : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && timer < 0f)
         {
             timer = cooldown;
-            Quaternion rot = Quaternion.LookRotation(Vector3.forward, aimDirection);
+            Quaternion rot = Quaternion.LookRotation(Vector3.forward, aimDirection.normalized);
             GameObject yell = Instantiate(yellPrefab, transform.position, rot);
-            yell.GetComponent<Yell>().direction = aimDirection;
+            yell.GetComponent<Yell>().direction = aimDirection.normalized;
         }
 
         fillBar.fillAmount = timer / cooldown;
-        Gizmos.Line(transform.position, transform.position + (Vector3)aimDirection, Color.magenta);
+        Gizmos.Line(transform.position, transform.position + (Vector3)aimDirection.normalized, Color.magenta);
     }
 
     private void OnRenderObject()
