@@ -41,6 +41,7 @@ public class HotDogStand : MonoBehaviour
     public void OnCollidedWith()
     {
         // Kabloom
-        Destroy(gameObject);
+        if (all.Count > 1)
+            Destroy(gameObject);
     }
 }

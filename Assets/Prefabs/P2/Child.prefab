@@ -88,8 +88,8 @@ MonoBehaviour:
   pushBackTime: 0.5
   explosionPrefab: {fileID: 4008501725483120082, guid: aa561dd111530ac45a6ab65b917c1255, type: 3}
   scorchMark: {fileID: 977406588304122638, guid: 439ea45d141f5a8438b7ea85a428d599, type: 3}
-  zigzagSpeed: 0.2
-  zigzagHeight: 3
+  zigzagSpeed: 0.3
+  zigzagHeight: 2
 --- !u!50 &-4846860257868232230
 Rigidbody2D:
   serializedVersion: 4
