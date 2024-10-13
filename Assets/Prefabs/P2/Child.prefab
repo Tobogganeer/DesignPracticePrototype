@@ -82,12 +82,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ada15af6bc38a3346aab60b11d1b5455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   health: 1
   pushBackDistance: 3
   pushBackTime: 0.5
-  zigzagSpeed: 0.5
-  zigzagHeight: 2
+  zigzagSpeed: 0.2
+  zigzagHeight: 3
 --- !u!50 &-4846860257868232230
 Rigidbody2D:
   serializedVersion: 4

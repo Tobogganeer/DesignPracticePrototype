@@ -10,6 +10,11 @@ public class Yell : MonoBehaviour
     [HideInInspector]
     public Vector3 direction;
 
+    private void Start()
+    {
+        Destroy(gameObject, 10f);
+    }
+
     private void Update()
     {
         transform.position += direction * speed * Time.deltaTime;

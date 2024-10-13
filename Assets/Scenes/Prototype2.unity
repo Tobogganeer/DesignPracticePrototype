@@ -728,6 +728,18 @@ PrefabInstance:
       propertyPath: fillBar
       value: 
       objectReference: {fileID: 278898114}
+    - target: {fileID: 5807735245510265192, guid: 38a1ea012dbee984f9c85735926356c1, type: 3}
+      propertyPath: cooldown
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8434506742844973906, guid: 38a1ea012dbee984f9c85735926356c1, type: 3}
+      propertyPath: speed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8434506742844973906, guid: 38a1ea012dbee984f9c85735926356c1, type: 3}
+      propertyPath: acceleration
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

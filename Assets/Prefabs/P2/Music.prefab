@@ -84,8 +84,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   health: 3
-  pushBackDistance: 1.25
-  pushBackTime: 0.75
+  pushBackDistance: -1.25
+  pushBackTime: 0.5
 --- !u!50 &-3097241888183092494
 Rigidbody2D:
   serializedVersion: 4
