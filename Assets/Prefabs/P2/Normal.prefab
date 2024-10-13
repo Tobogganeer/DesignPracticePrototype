@@ -186,6 +186,8 @@ MonoBehaviour:
   health: 2
   pushBackDistance: 2
   pushBackTime: 1
+  explosionPrefab: {fileID: 4008501725483120082, guid: aa561dd111530ac45a6ab65b917c1255, type: 3}
+  scorchMark: {fileID: 977406588304122638, guid: 439ea45d141f5a8438b7ea85a428d599, type: 3}
 --- !u!50 &-3676191815841559050
 Rigidbody2D:
   serializedVersion: 4
