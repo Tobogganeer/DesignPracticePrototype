@@ -36,7 +36,7 @@ public class Person : MonoBehaviour
         }
     }
 
-    protected virtual void Move(Vector3 spawnPoint, Vector3 to)
+    protected virtual void Move(Vector3 moveFrom, Vector3 to)
     {
         transform.position += transform.position.Dir(to) * speed * Time.deltaTime;
     }
@@ -46,6 +46,7 @@ public class Person : MonoBehaviour
         if (collision.CompareTag("Stand"))
         {
             targetStand.OnCollidedWith();
+            Kill(); // Kaboom
         }
     }
 
